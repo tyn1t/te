@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "conta bancaria  do gg"
+version = "0.1.0"
+description = "projeto init"
+authors = ["Giovanni <anderlansouza71@gmail.com>"]
+license = "ok"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "*"
+uvicorn = { extras = ["standard"], version = "*" }
+databases = { version = "*", extras = ["aiosqlite", "asyncpg"] }
+pyjwt = "*"
+psycopg2-binary = "*"
+pydantic-settings = "*"
+alembic = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
